@@ -1,64 +1,119 @@
-/* HEADER */
+[class*="__container"] {
+  max-width: 700px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
 
+body,
+html {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+body,
+html h1 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva,
+    Arial, sans-serif;
+}
+
+.code {
+  font-family: "Courier New", monospace;
+  background: rgb(241, 241, 241);
+}
+
+/* Header */
 header {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: start;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .logo img {
-    height: 40px;
-    margin-right: 20px;
-    padding-left: 10px;
+  height: 64px;
+  width: 97px;
+  margin: 10px 0 10px 38px;
 }
 
 nav {
-    background-color: #f8f8f8;
-    width: 100%;
-    border: 1px solid #ddd;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: #f8f8f8;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 20px 38px;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    position: relative;
-    font-size: 24px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  font-size: 24px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    cursor: url("responsive-design\E8E9A56B-53B7-494E-BE52-747EE607EC62\5301AFFB-CEE8-43FC-8F06-FB9785DF6E4A@2x.png"), pointer;
-}
-
-nav ul li a.active {
-    color: #007BFF;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
+  text-decoration: underline;
+  cursor: url("responsive-design/E8E9A56B-53B7-494E-BE52-747EE607EC62/5301AFFB-CEE8-43FC-8F06-FB9785DF6E4A@2x.png"),
+    pointer;
 }
 
 .here {
-    color: red;
+  color: red;
 }
 
+/*---MAIN----------------------*/
+.main {
+  padding: 55px 0 94px 0;
+}
+.main h1 {
+  font-weight: bold;
+  font-size: 42px;
+  color: rgba(0, 0, 0, 0.84);
+  text-align: left;
+  line-height: 44px;
+}
 
+.main h2 {
+  font-weight: bold;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.84);
+  text-align: left;
+  line-height: 39px;
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.main__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main p {
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.84);
+  text-align: left;
+  line-height: 33px;
+}
 
+/*---------------------------*/
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
+  [class*="__container"] {
+    max-width: 600px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
