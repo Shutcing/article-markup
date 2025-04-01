@@ -1,4 +1,60 @@
-/* Тут пиши основные стили */
+/* HEADER */
+
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+nav {
+    background-color: #f8f8f8;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    font-size: 24px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    cursor: url("responsive-design\E8E9A56B-53B7-494E-BE52-747EE607EC62\5301AFFB-CEE8-43FC-8F06-FB9785DF6E4A@2x.png"), pointer;
+}
+
+nav ul li a.active {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+.here {
+    color: red;
+}
+
 
 
 @media (max-width: 800px) {
